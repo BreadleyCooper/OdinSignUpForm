@@ -1,19 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300&family=Russo+One&display=swap');
 * {
     box-sizing: border-box;
 }
 body {
     background-color:rgba(216, 213, 213, 0.507);
     margin: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+input, button{
+    font-family: 'Roboto', sans-serif;
+    width: 200px;
+    height: 1.8em;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    border:solid 2px #e5e7eb;
+}
+label,input {
+    display: flex;
+    flex-direction: row;
+}
+input:focus {
+    border: #57A6B7 solid 2px;
+    outline: none;
+    box-shadow: 5px 10px 10px rgba(219, 209, 209, 0.74);
+}
+
+.names, .emailphone, .passwords {
+    display: flex;
+    flex-direction: row;
 }
 .flexcontainer {
-  display:flex;
-  
+    display:flex;
 }
 .backgroundimage {
     background-image: url("Background.jpeg");
     min-height: 100vh;
-    max-width: 40vh;
-    min-width: 40vh;
+    max-width: 35vw;
+    min-width: 35vw;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -21,13 +46,71 @@ body {
 }
 .logo {
     background-color: rgba(0, 0, 0, 0.205);
-    min-height: 50px;
+    min-height: 100px;
     display:flex;
     justify-content: centre;
-    align-itenms: centre;
+    align-items: centre;
+    margin-bottom: 200px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Russo-One", sans-serif;
+    font-weight: 600;
+    padding-left: 10px;
 
 }
+.formcontainer {
+    background-color: white;
+    box-shadow: 5px 10px 10px rgba(219, 209, 209, 0.74);
+}
 .rightcontainer {
-  display:flex;
-  flex-direction: column;
+    display:flex;
+    flex-direction: column;    
+}
+.signuptext {
+    padding: 40px 40px 50px;
+    font-size: large;
+    line-height: 1.5;
+}
+form{
+    padding: 0 20px 20px 0;
+}
+.btncontainer {
+    padding: 30px 40px 0px;
+    
+}
+.logincontainer {
+    padding: 0 40px;
+}
+ul {
+    list-style-type: none;
+}
+h1 {
+    padding-left: 40px;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+button {
+    background: linear-gradient(#57A6B7, #2E89A4) ;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.error {
+    border: solid red 1px;
+}
+.errortext {
+    color: red;
+    font-size: small;
+}
+a {
+    text-decoration: none;
+    color:#57A6B7;
+    font-weight: bold;
 }
