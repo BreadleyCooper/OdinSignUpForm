@@ -8,8 +8,36 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <div class="backgroundimage">
+    <div class="flexcontainer">
+      <div class="backgroundimage">
         <div class="logo">Logo text</div>
+      </div>
+      <div class="rightcontainer">
+        <p class="signuptext">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <div class="formcontainer">
+          <form action="exampleurl.com/example" method="post" id="form1">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="phone;">Phone Number</label>
+            <input type="number" id="phone" name="phone">
+            <label for="pwd">Password*</label>
+            <input type="password" id="pwd" name="pwd">
+            <label for="checkpwd">Confirm Password*</label>
+            <input type="password" id="checkpwd" name="check">
+          </form>  
+        </div>
+        <div class="btncontainer">
+        <button type="submit" form="form1">Create Account</button>
+        </div>
+        <div class="logincontainer">
+          <p>Already have an account? <a href="example.com/example">Log in</p>
+        </div>
+      </div>
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emmet/2.3.6/emmet.cjs.js"></script>
 </body>
 </html>
