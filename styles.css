@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:rgba(216, 213, 213, 0.507);
+    margin: 0;
+}
+.backgroundimage {
+    background-image: url("Background.jpeg");
+    min-height: 100vh;
+    max-width: 33vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo {
+    background-color: rgba(0, 0, 0, 0.205);
+    min-height: 50px;
+
+}
